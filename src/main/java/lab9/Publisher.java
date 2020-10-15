@@ -1,9 +1,11 @@
 package lab9;
 
-public class Publisher(){
-    public void publish(Object data, String channel){
-        List<Suscriber> listSubs = map.get(channel);
-        for (Suscriber sub : listSubs){
+import java.util.*;
+
+public class Publisher {
+    public void publish(Object data, String channel, HashMap<String, List<Subscriber>> subscriberMap){
+        List<Subscriber> listSubs = subscriberMap.get(channel);
+        for (Subscriber sub : listSubs){
             sub.notify();
         }
     }

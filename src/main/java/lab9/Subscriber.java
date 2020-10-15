@@ -1,7 +1,14 @@
 package lab9;
 
-public class Suscriber(){
+import java.util.*;
 
-    public void subscribe(String channel);
-    public void notify ();
+public class Subscriber {
+
+    public void subscribe(String channel) {
+
+    }
+
+    public void notifySub () {
+
+    }
 }
